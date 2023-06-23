@@ -1,0 +1,22 @@
+.menu{
+    display: flex;
+    justify-content: space-between; 
+    background: var(--cor-de-fundo);
+    
+}
+
+@media(min-width: 768px) and (max-width: 1024px){
+    .menu{
+        height: 56px;
+        width: 100vw;
+        padding: 16px 32px;
+    }
+}
+
+@media(min-width: 1024px){
+    .menu{
+        padding: 0px 32px;
+        width: 90%;
+    }
+}
+

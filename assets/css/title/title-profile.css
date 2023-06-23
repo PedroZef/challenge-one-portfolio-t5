@@ -1,0 +1,25 @@
+.title__profile{
+    background: url(../../imagens/perfil.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 368px;
+    width: 368px;
+    border-radius: 50%;
+   
+}
+
+@media(min-width: 320px) and (max-width: 768px){
+    .title__profile{
+        height: 98px;
+        width: 98px;
+        padding: 2rem 1rem 1rem 2rem;
+        margin-left: 1rem;
+    }
+}
+
+@media(min-width: 768px) and (max-width: 1024px){
+    .title__profile{
+        height: 146px;
+        width: 146px;
+}
+  }

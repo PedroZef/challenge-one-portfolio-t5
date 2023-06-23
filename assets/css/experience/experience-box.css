@@ -1,0 +1,30 @@
+.experience__box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem  5.5rem;
+    column-gap: 1rem;
+}
+
+@media(min-width: 320px) and (max-width: 768px){
+    .experience__box{
+      flex-direction: column;
+     
+    }
+    .experience__box--projetoDois{
+        flex-direction: column-reverse;
+    }
+  }
+
+@media(min-width: 768px) and (max-width: 1024px){
+    .experience__box{
+        flex-direction: column;
+        margin: 2rem 2rem 2rem 1rem;
+        padding: 1rem 2rem 0 1rem; 
+        align-items: flex-start;
+    }
+
+    .experience__box--projetoDois{
+        flex-direction: column-reverse;
+    }
+}

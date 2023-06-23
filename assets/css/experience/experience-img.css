@@ -1,0 +1,38 @@
+.experience__img{
+    box-shadow: 0 1px 7px 0px rgba(19, 18, 18, 0.644);
+    height: 427px;
+    width: 752px;
+}
+.experience__img--alurinha{
+    background: url(../../imagens/alurinha.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.experience__img--colageno{
+    background: url(../../imagens/landing-mobil.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.experience__img--descriptador{
+    background: url(../../imagens/desencriptador.png);
+    background-size: cover;
+    background-position: center;
+}
+
+@media(min-width: 320px) and (max-width: 768px){
+    .experience__img{
+        width: 296px;
+        height: 144px;
+    }
+}
+
+@media(min-width: 768px) and (max-width: 1024px){
+  
+    .experience__img{
+        width: 704px;
+        height: 320px;
+    }
+}
+

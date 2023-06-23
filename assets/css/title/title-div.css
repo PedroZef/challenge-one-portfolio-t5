@@ -1,0 +1,25 @@
+.title__div{
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 5px;
+    margin-left: 5.5rem;
+    margin-right: 5.5rem;
+}
+@media(min-width: 320px) and (max-width: 768px){
+    .title__div{
+        width: 100%;
+        align-items: flex-start;
+        flex-direction: column;
+        margin-left: 0;
+        margin-right: 0;
+    } 
+ }
+@media(min-width: 768px) and (max-width: 1024px){
+   .title__div{
+        height: 210px;
+        margin-left: 2rem;
+        margin-right: 2rem;
+   } 
+}

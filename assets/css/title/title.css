@@ -1,0 +1,21 @@
+.title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 20px;
+    height: 368px;
+    color:  #464646;
+    margin: 0 auto;
+}
+@media(min-width: 320px) and (max-width: 1024px ){
+    .title{
+        width: 100vw;
+        height: 294px;
+        padding: 1rem 0 4rem 0;
+    }
+}
+@media(min-width: 768px) and (max-width: 1024px){
+    .title{
+        height: 210px
+}
+  }

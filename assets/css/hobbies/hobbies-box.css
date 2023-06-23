@@ -1,0 +1,52 @@
+.hobbies__box{
+    background: #FFFFFF;
+    width: 176px;
+    height: 174px;
+    margin: 5px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    line-height: 20px;
+    
+}
+
+
+.hobbies__box ul{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 1rem;
+    padding-bottom: 1rem;   
+}
+
+.hobbies__box ul li{
+    color: #464646;
+    font-size: 16px;
+}
+
+.oculos img{
+    height: 32px;
+}
+
+@media(min-width: 320px) and (max-width: 768px){
+    .hobbies__box{
+        width: 156px;
+        height: 118px;
+    } 
+
+}
+
+
+
+
+@media(min-width: 768px) and (max-width: 1024px){
+    .hobbies__box{
+        height: 118px;
+        margin-bottom: 32px;
+        width: 224px;
+    } 
+
+}
