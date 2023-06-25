@@ -1,10 +1,20 @@
-.menu{
+header {
+    width: 100%;
     display: flex;
-    justify-content: space-between; 
-    background: var(--cor-de-fundo);
-    
+    align-items: center;
 }
 
+.menu__cabecalho {
+    display: flex;
+    align-items: center;
+    margin: 0 15px;
+}
+
+.menu__icone {
+    align-items: center;
+    height: 30px;
+    margin-left: 10px;
+}
 @media(min-width: 768px) and (max-width: 1024px){
     .menu{
         height: 56px;

@@ -7,56 +7,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Folha de estilo de CSS Linkado -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
 
-    <!-- Folha de estilo de CSS Linkado -->
-    <link rel="stylesheet" href="assets/css/reset/style.css">
-    <link rel="stylesheet" href="assets/css/menu/menu.css">
-    <link rel="stylesheet" href="assets/css/menu/menu-cabecalho.css">
-    <link rel="stylesheet" href="assets/css/menu/menu-list.css">
-    <link rel="stylesheet" href="assets/css/menu/menu-title.css">
+    <link rel="stylesheet" href="./css/menu/menu.css">
+    <link rel="stylesheet" href="./css/menu/menu-title.css">
+    <link rel="stylesheet" href="./css/menu/menu-list.css">
+    <link rel="stylesheet" href="./css/menu/menu-list-item.css">
+    <link rel="stylesheet" href="./css/menu/menu-list-item--contato.css">
 
-    <link rel="stylesheet" href="assets/css/title/title-container.css">
-    <link rel="stylesheet" href="assets/css/title/title-div.css">
-    <link rel="stylesheet" href="assets/css/title/title-profile.css">
-    <link rel="stylesheet" href="assets/css/title/title_network.css">
-    <link rel="stylesheet" href="assets/css/title/title.css">
+    <link rel="stylesheet" href="./css/about/about-paragraph.css">
+    <link rel="stylesheet" href="./css/about/about-title.css">
+    <link rel="stylesheet" href="./css/about/about.css">
 
-    <link rel="stylesheet" href="assets/css/about/about.css">
-    <link rel="stylesheet" href="assets/css/about/about-title.css">
-    <link rel="stylesheet" href="assets/css/about/about-paragraph.css">
-
-    <link rel="stylesheet" href="assets/css/skills/skills-title.css">
-    <link rel="stylesheet" href="assets/css/skills/skills-line.css">
-    <link rel="stylesheet" href="assets/css/skills/skill-box.css">
+    <link rel="stylesheet" href="./css/title/title.css">
+    <link rel="stylesheet" href="./css/title/title_network.css">
+    <link rel="stylesheet" href="./css/title/title-container.css">
+    <link rel="stylesheet" href="./css/title/title-div.css">
+    <link rel="stylesheet" href="./css/title/title-profile.css">
 
 
-    <link rel="stylesheet" href="assets/css/hobbies/hobbies-line.css">
-    <link rel="stylesheet" href="assets/css/hobbies/hobbies-box.css">
-    <link rel="stylesheet" href="assets/css/hobbies/hobbies-title.css">
 
-    <link rel="stylesheet" href="assets/css/academic/academic-title.css">
-    <link rel="stylesheet" href="assets/css/academic/academic-courses-box.css">
-    <link rel="stylesheet" href="assets/css/academic/academic-courses.css">
-    <link rel="stylesheet" href="assets/css/academic/academic.css">
-    <link rel="stylesheet" href="assets/css/academic/academic-courses-list.css">
-    <link rel="stylesheet" href="assets/css/academic/academic-courses-itens-img.css">
-
-    <link rel="stylesheet" href="assets/css/experience/experience__description.css">
-    <link rel="stylesheet" href="assets/css/experience/experience-title.css">
-    <link rel="stylesheet" href="assets/css/experience/experience-section-title.css">
-    <link rel="stylesheet" href="assets/css/experience/experience-next.css">
-    <link rel="stylesheet" href="assets/css/experience/experience-info.css">
-    <link rel="stylesheet" href="assets/css/experience/experience-img.css">
-    <link rel="stylesheet" href="assets/css/experience/experience-box.css">
-    <link rel="stylesheet" href="assets/css/experience/experience-buttons.css">
-
-    <link rel="stylesheet" href="assets/css/contato/formcontato-contacto.css">
-    <link rel="stylesheet" href="assets/css/contato/formcontato--esquerda.css">
-    <link rel="stylesheet" href="assets/css/contato/formcontato__form.css">
-    <link rel="stylesheet" href="assets/css/contato/formcontato__text.css">
-    <link rel="stylesheet" href="assets/css/contato/formcontato.css">
-    <link rel="stylesheet" href="assets/css/contato/formcontato__botao.css">
+    
 
     <link rel="stylesheet" href="assets/css/footer.css">
 
@@ -73,66 +44,56 @@
     <!-- Sessão de Menu  -->
     <div class="all">
         <section class="menu">
-            <header>
-                <p class="cabecalho__nome"><img src="assets/img/vector.png" alt="Estrelas">Pedro Zeferino da Silva</p>
-            </header>
-            <nav>
-                <ul class="menu__list">
-                    <li class="menu__list__item"><a href="#sobremim">Sobre mim</a></li>
-                    <li class="menu__list__item"><a href="#skills">Skills</a></li>
-                    <li class="menu__list__item"><a href="#hobbies">Hobbies</a></li>
-                    <li class="menu__list__item"><a href="#formacao">Formações</a></li>
-                    <li class="menu__list__item"><a href="#xp">Experiência</a></li>
-                    <li class="menu__list__item"><a href="#contato">zefpedro@hotmail.com</a></li>
-                </ul>
-            </nav>
+            <header class="menu__cabecalho">
+                <img class="menu__icone" src="assets/imagens/vector.png">
+                <h3 class="menu__title">Pedro Zeferino da Silva</h3>
+                <nav>
+                    <ul class="menu__list">
+                        <li class="menu__list__item"><a href="#sobremim">Sobre mim</a></li>
+                        <li class="menu__list__item"><a href="#skills">Skills</a></li>
+                        <li class="menu__list__item"><a href="#hobbies">Hobbies</a></li>
+                        <li class="menu__list__item"><a href="#formacao">Formações</a></li>
+                        <li class="menu__list__item"><a href="#xp">Experiência</a></li>
+                        <li class="menu__list__item menu__list__item--contato "><a href="#contato">zefpedro@hotmail.com</a></li>
+                    </ul>
+                </nav>
+            </header>      
         </section>
-
         <!-- Sessão de Header/Title/Hero -->
         <section class="title">
             <div class="title__div">
-                <img class="title__profile" src="assets/img/foto-pedro.jpg">
+                <img class="title__profile" src="assets/imagens/foto_pedrozef.jpg">
                 <div class="title__container" id="#sobremim">
-                    <h2 class="title__bio">Olá, meu nome é Pedro Zeferino da Silva e construo páginas web</h2>
+                    <h3 class="title__bio">Olá, meu nome é Pedro Zeferino da Silva e construo páginas web</h3>
                     <h3 class="title__subsection">Em transição de carreira para programação web e atualmente estou
                         participando no projeto Oracle ONE na Alura.</h3>
                     <ul class="title__network">
                         <!-- Ponha os links de suas redes sociais favoritas -->
                         <li class="title__network__item"><a href="https://github.com/PedroZef">Github <img
-                                    src="assets/img/arrow.png"></a></li>
+                                    src="assets/imagens/arrow.png"></a></li>
                         <li class="title__network__item"><a
                                 href="https://www.linkedin.com/in/pedro-zeferino-da-silva-30654a121/">Linkedin <img
-                                    src="assets/img/arrow.png"></a></li>
+                                    src="assets/imagens/arrow.png"></a></li>
                         <li class="title__network__item"><a href="https://instagram.com/pedrozeferinodasilva">Instagram
-                                <img src="assets/img/arrow.png"></a></li>
+                                <img src="assets/imagens/arrow.png"></a></li>
                         <li class="title__network__item"><a href="https://onlinecurriculo.com.br/r/ymyltlHY2">Curriculo
-                                <img src="assets/img/arrow.png"></a></li>
+                                <img src="assets/imagens/arrow.png"></a></li>
                     </ul>
                 </div>
             </div>
         </section>
-
-
-
         <!-- Sessão sobre mim -->
         <section class="about">
             <div class="about__container">
-                <h4 class="about__title">
+                <h3 class="about__title">
                     <a href="#" title="Clique aqui para voltar ao topo da página">Sobre mim</a>
-                </h4>
+                </h3>
                 <p class="about__paragraph"> Tenho 60 anos e aposentado com bastante expriência na mecânica de caminhóes
-                    e ônibus, também técnico de informática para internet. Lá no início em 1978 ajudante geral, meio
-                    oficial marcineiro até em 1984
-                    migrei para mecânica, onde tornei técnico desta área quando no final de 2020 me aposentei. </p>
-                <p class="about__paragraph">Tenho pontos fortes em resolução de conflitos, trabalho em equipe,
-                    estratégica, determinação e
-                    capacidade de aprendizado rápido.
-                    Então, não parei, desde 2022 tive o interrese na programação e hoje busco desafios e oportunidades
-                    para
-                    crescer profissionalmente,
-                    aplicando minhas habilidades em projetos e a desenvolver na carreira como desenvolvedor. .</p>
+                e ônibus, formado técnico de informática para internet.</p>
+                <p class="about__paragraph">Tenho pontos fortes em resolução de conflitos, trabalho em equipe.
+                Hoje busco desafios e oportunidades para desenvolver como desenvolvedor.</p>
                 <!-- Caso queira colocar sua própria assinatura, insira aqui! -->
-                <img src="assets/img/signature.png" alt="Assinatura do Pedro">
+                <img src="assets/imagens/signature.png" alt="Assinatura do Pedro">
             </div>
         </section>
 

@@ -1,11 +1,12 @@
-.menu__cabecalho{
+.menu__cabecalho {
+    width: 100%;
     display:flex;
-    align-items: center;
-    margin-left: 2rem;
 }
 
-.menu__icone{
-    height: 20px;
+.menu__title {
+    align-items: center;
+    display: flex;
+    color: #464646;
 }
 
 @media(min-width: 320px) and (max-width: 768px){

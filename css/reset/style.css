@@ -1,0 +1,96 @@
+/*CSS Reset / Normalize*/
+/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
+coloque nas sessões indicadas*/
+
+:root {
+    /*Insira a variavel das outras cores inspecionando o modelo do figma*/
+    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+    --cor-de-fundo: #F5F5F5;
+    --cor-de-link: #000;
+    --azul10: #EAF2FD;
+    --azul20: #D4E4FA;
+    --azul80: #5595E9;
+    --azul100: #2A7AE4;
+    --branco: #FFFFFF;
+    --cinza10: #EDEDED;
+    --cinza30: #C8C8C8;
+    --cinza50: #A2A2A2;
+    --cinza100: #464646;
+    --erro: #4b6994;
+
+    --raleway: 'Raleway', sans-serif;
+}
+
+/* elementos básicos */
+
+/* mobile */
+
+body {
+    /* align-items: center;
+  display: flex;
+  flex-direction: column; */
+
+    background-color: var(--fundo);
+
+    font-family: var(--raleway);
+    font-size: 16px;
+    /* equivale a 1rem */
+
+    color: var(--cinza100);
+    /* cor da fonte */
+
+    margin: 0;
+    padding: 0;
+
+    width: 100vw;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: var(--cinza100);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+input,
+textarea {
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+
+
+button {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+
+/* --- fim ;) */

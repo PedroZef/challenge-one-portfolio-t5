@@ -1,15 +1,16 @@
 .menu__list{
-    display:flex;
+    display: inline-block;
     align-items: center;
-    column-gap: 32px;
+    justify-content: space-around;
+    margin: 0 10px;
 }
 .menu__list a{
+    
     color:  #464646;
 }
 .menu__list a:hover{
-    color: #681802;
+    color: #0323b1;
     text-decoration: underline;
-
 }
 
 .menu__list__item--contato{

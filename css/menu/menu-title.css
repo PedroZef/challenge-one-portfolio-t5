@@ -1,5 +1,6 @@
 .menu__title{
-   color: #464646; 
+   color: #464646;
+
 }
 
 @media(min-width: 320px) and (max-width: 768px){
