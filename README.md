@@ -53,5 +53,5 @@ Vá na aba "Sobre" ou "About" do seu projeto no menu lateral que fica na esquerd
 6) Não se esqueça de colocar um link ou vídeo de seu projeto no Linkedin! Marque com a #Oracle #AluraLatam 🏁
 
 
- <a href="https://www.linkedin.com/company/alura-latam/mycompany/" target="_blank">
-<img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
+ <a href="https://lp.alura.com.br/alura-latam-entrega-de-challenges-one-agradecimento" target="_blank">
+<img src="https://d335luupugsy2.cloudfront.net/cms%2Ffiles%2F10224%2F1671211659Prancheta_4.png?utm_campaign=alura_latam_-_challenge_email_projeto_3_br&utm_medium=email&utm_source=RD+Station" target="_blank"></a>

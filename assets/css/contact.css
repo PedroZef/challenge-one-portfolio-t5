@@ -163,6 +163,11 @@ section.formcontato {
 
     .formcontato__text  {
       text-align: center;
+
+    }
+
+    .formcontato__text a {
+      padding: 1e,;
     }
 
   .formcontato__input {

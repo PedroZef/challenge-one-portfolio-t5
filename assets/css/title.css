@@ -31,6 +31,7 @@ section.title {
   backface-visibility: hidden;
   box-shadow: 0px 8px 8px 8px rgba(61, 59, 59, 0.1);
   border-radius: 50%;
+  overflow: hidden;
 }
 
 .title__profile--front {
@@ -40,7 +41,7 @@ section.title {
 .title__profile--back,
 .title__profile--back {
   transform: rotateY(180deg);
-  background-color: #c2b04d;
+  background-color: #4c2dd4;
   color: #000;
   text-align: center;
   display: flex;
@@ -53,7 +54,7 @@ section.title {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 30%;
+  border-radius: 40%;
 }
 
 .title__profile--back span {
@@ -129,8 +130,17 @@ section.title {
   }
 
   .title__profile--img {
-    height: 146px;
-    width: 146px;
+    height: 156px;
+    width: 156px;
+    border-radius: 50%;
+  }
+
+  .profile__back--img {
+    height: 156px;
+    width: 156px;
+    border-radius: 50%;
+    float: right;
+
   }
 
   .title__bio {
@@ -146,6 +156,11 @@ section.title {
     gap: 4em;
   }
 
+  .title__network__item {
+    padding: 1em 0;
+  }
+
+   
   .title__profile--back span {
     font-size: 14px;
     
@@ -159,7 +174,7 @@ section.title {
   .title__container {
     flex-direction: column;
     align-items: baseline;
-    padding: 2em 0;
+    padding: 1em 0;
   }
 
   .title__div {
@@ -169,5 +184,9 @@ section.title {
   .title__network {
     gap: 0.5em;
   }
-  
+
+        .title__network__item {
+          padding: 1em 0;
+        }
+
 }
