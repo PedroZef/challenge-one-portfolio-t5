@@ -1,0 +1,96 @@
+/*CSS Reset / Normalize*/
+/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
+coloque nas sessões indicadas*/
+@import url("about.css");
+@import url("academic.css");
+@import url("contact.css");
+@import url("footer.css");
+@import url("menu.css");
+@import url("professional.css");
+@import url("skills-hobbies.css");
+@import url("title.css");
+
+:root {
+    /*Insira a variavel das outras cores inspecionando o modelo do figma*/
+    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+    --background-color: #f5f5f5;
+    --azul10: #EAF2FD;
+    --azul20: #2264c0;
+    --branco: #fffdfd;
+    --cards-colors:  white;
+    --link-color: #000;
+
+    --font-color: #464646;
+    --raleway: 'Raleway', sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--azul10);
+    font-family: 'Raleway';
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+.no-style {
+    margin: 1em;
+    padding: 0.5em;
+    list-style: none;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+   
+}
+
+.secondary-title {
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.minor-title {
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.links {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+.button--up {
+    position: fixed;
+    background-color: var(--cards-colors);
+    bottom: 20px;
+    right: 25px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    font-size: 24px;
+    display: none;
+    z-index: 9999;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.button--up:active {
+    transform: scale(0.9);
+}
+
+
+/*Tablet*/
+@media (max-width: 768px) {}
+
+/*Mobile*/
+@media (max-width: 425px) {
+}

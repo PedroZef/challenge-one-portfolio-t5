@@ -1,0 +1,27 @@
+footer {
+  margin-top: 20px;
+}
+
+.footer__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+
+}
+
+.footer__rodape p {
+  justify-content: center;
+  line-height: 19px;
+  color: #464646;
+}
+
+  /* Tablets */
+  @media (max-width: 768px) { 
+    
+  }
+
+  /*Mobile*/
+@media (max-width: 425px) {
+  
+}

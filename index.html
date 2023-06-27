@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
@@ -7,29 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Folha de estilo de CSS Linkado -->
-    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 
-    <link rel="stylesheet" href="./css/menu/menu.css">
-    <link rel="stylesheet" href="./css/menu/menu-title.css">
-    <link rel="stylesheet" href="./css/menu/menu-list.css">
-    <link rel="stylesheet" href="./css/menu/menu-list-item.css">
-    <link rel="stylesheet" href="./css/menu/menu-list-item--contato.css">
-
-    <link rel="stylesheet" href="./css/about/about-paragraph.css">
-    <link rel="stylesheet" href="./css/about/about-title.css">
-    <link rel="stylesheet" href="./css/about/about.css">
-
-    <link rel="stylesheet" href="./css/title/title.css">
-    <link rel="stylesheet" href="./css/title/title_network.css">
-    <link rel="stylesheet" href="./css/title/title-container.css">
-    <link rel="stylesheet" href="./css/title/title-div.css">
-    <link rel="stylesheet" href="./css/title/title-profile.css">
-
-
-
-    
-
-    <link rel="stylesheet" href="assets/css/footer.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,339 +17,439 @@
     <!-- Fonte do Projeto Raleway -->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
 
-    <title>Portifólio Pessoal - Challenge Frontend</title>
+    <title> Challenge Frontend Portifólio </title>
 </head>
 
 <body>
-    <!-- Sessão de Menu  -->
-    <div class="all">
-        <section class="menu">
-            <header class="menu__cabecalho">
-                <img class="menu__icone" src=".assets/imagens/vector.png">
-                <h3 class="menu__title">Pedro Zeferino da Silva</h3>
-                <nav>
-                    <ul class="menu__list">
-                        <li class="menu__list__item"><a href="#sobremim">Sobre mim</a></li>
-                        <li class="menu__list__item"><a href="#skills">Skills</a></li>
-                        <li class="menu__list__item"><a href="#hobbies">Hobbies</a></li>
-                        <li class="menu__list__item"><a href="#formacao">Formações</a></li>
-                        <li class="menu__list__item"><a href="#xp">Experiência</a></li>
-                        <li class="menu__list__item menu__list__item--contato "><a href="#contato">zefpedro@hotmail.com</a></li>
-                    </ul>
-                </nav>
-            </header>      
-        </section>
-        <!-- Sessão de Header/Title/Hero -->
-        <section class="title">
-            <div class="title__div">
-                <img class="title__profile" src="./assets/imagens/foto_pedrozef.jpg">
-                <div class="title__container" id="#sobremim">
-                    <h3 class="title__bio">Olá, meu nome é Pedro Zeferino da Silva e construo páginas web</h3>
-                    <h3 class="title__subsection">Em transição de carreira para programação web e atualmente estou
-                        participando no projeto Oracle ONE na Alura.</h3>
-                    <ul class="title__network">
-                        <!-- Ponha os links de suas redes sociais favoritas -->
-                        <li class="title__network__item"><a href="https://github.com/PedroZef">Github <img
-                                    src="./assets/imagens/arrow.png"></a></li>
-                        <li class="title__network__item"><a
-                                href="https://www.linkedin.com/in/pedro-zeferino-da-silva-30654a121/">Linkedin <img
-                                    src="assets/imagens/arrow.png"></a></li>
-                        <li class="title__network__item"><a href="https://instagram.com/pedrozeferinodasilva">Instagram
-                                <img src="./assets/imagens/arrow.png"></a></li>
-                        <li class="title__network__item"><a href="https://onlinecurriculo.com.br/r/ymyltlHY2">Curriculo
-                                <img src="./assets/imagens/arrow.png"></a></li>
-                    </ul>
+    <!-- Sessão Header  -->
+    <body class="body">
+        <div class="all">
+            <!-- Sessão de Menu  -->
+            <section class="menu sections">
+                <div class="menu__container">
+                    <header class="menu__header">
+                        <div class="menu__title">
+                            <img src="./assets/imgs/vector.png" alt="Simbolo vector" />
+                            <p>Pedro Zefrino da Silva</p>
+                        </div>
+                        <nav>
+                            <ul class="menu__list links no-style">
+                                <li class="menu__list__item">
+                                    <a href="#sobremim" class="links">Sobre mim</a>
+                                </li>
+                                <li class="menu__list__item">
+                                    <a class="links" href="#skills">Skills</a>
+                                </li>
+                                <li class="menu__list__item">
+                                    <a class="links" href="#hobbies">Hobbies</a>
+                                </li>
+                                <li class="menu__list__item">
+                                    <a href="#formacao" class="links">Formação</a>
+                                </li>
+                                <li class="menu__list__item">
+                                    <a class="links" href="#xp">Projetos</a>
+                                </li>
+                                <li class="menu__list__item">
+                                    <a href="#contato" class="links">zefpedro@hotmail.com</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </header>
                 </div>
-            </div>
-        </section>
-        <!-- Sessão sobre mim -->
-        <section class="about">
-            <div class="about__container">
-                <h3 class="about__title">
-                    <a href="#" title="Clique aqui para voltar ao topo da página">Sobre mim</a>
-                </h3>
-                <p class="about__paragraph"> Tenho 60 anos e aposentado com bastante expriência na mecânica de caminhóes
-                e ônibus, formado técnico de informática para internet.</p>
-                <p class="about__paragraph">Tenho pontos fortes em resolução de conflitos, trabalho em equipe.
-                Hoje busco desafios e oportunidades para desenvolver como desenvolvedor.</p>
-                <!-- Caso queira colocar sua própria assinatura, insira aqui! -->
-                <img src="./assets/imagens/signature.png" alt="Assinatura do Pedro">
-            </div>
-        </section>
+            </section>
+            <!-- Sessão de Header/Title/Hero -->
+            <section class="title sections">
+                <div class="title__container">
+                    <div class="title__profile__container">
+                        <div class="tittle__profile" onclick="rotateProfile()">
+                            <div class="title__profile--front">
+                                <img class="title__profile--img" src="./assets/imgs/foto-perfil.jpg"
+                                    alt="Foto de perfil" />
+                            </div>
+                            <div class="title__profile--back">
+                                <img src="./assets/imgs/profile_zef.jpg" alt="foto do Pedro ">
+                                <span>Pedro Zeferino da Silva <br />
+                                    Quer saber mais? Click Aqui...
+                                </span>
+                            </div>
+                        </div>
+                    </div>
 
-        <!-- Sessão de Skills/Habilidades -->
-        <section class="skills">
-            <h4 class="skills__title" id="skills">
-                <a href="#" title="Clique aqui para voltar ao topo da página">Skills</a>
-            </h4>
-            <div class="skills__line">
-                <div class="skills__box">
-                    <ul>
-                        <li class="skills__img"> <img src="./assets/img/css_icon.png" alt=""> </li>
-                        <li class="skills__name">CSS</li>
-                    </ul>
-                </div>
-
-                <div class="skills__box">
-                    <ul>
-                        <li class="skills__img"><img src="./assets/img/htlm.png"></li>
-                        <li class="skills__name"> Html 5</li>
-                    </ul>
-                </div>
-
-                <div class="skills__box">
-                    <ul>
-                        <li class="skills__img"> <img src="./assets/img/js_icon.png" alt=""></li>
-                        <li class="skills__name">Javascript</li>
-                    </ul>
-                </div>
-
-                <div class="skills__box">
-                    <ul>
-                        <li class="skills__img"><img src="./assets/img/nodejs_icon.png" alt=""></li>
-                        <li class="skills__name">Node JS</li>
-                    </ul>
-                </div>
-
-                <div class="skills__box">
-                    <ul>
-                        <li class="skills__img"> <img src="./assets/img/react_icon.png" alt=""> </li>
-                        <li class="skills__name">React</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- Sessão de Hobbies -->
-        <section class="hobbies" id="hobbies">
-            <h3 class="hobbies__title">
-                <a href="#" title="Clique aqui para voltar ao topo da página">Hobbies</a>
-            </h3>
-            <div class="hobbies__line">
-                <div class="hobbies__box">
-                    <ul>
-                        <li class="hobbies__img"><img src="./assets/img/icon_caminhar.svg"></li>
-                        <li class="hobbies__name">Caminhada</li>
-                    </ul>
-                </div>
-
-                <div class="hobbies__box">
-                    <ul>
-                        <li class="hobbies__img"><img src="./assets/img/icon_estudar.svg"></li>
-                        <li class="hobbies__name"> Ler livros</li>
-                    </ul>
-                </div>
-
-                <div class="hobbies__box">
-                    <ul>
-                        <li class="hobbies__img"> <img src="./assets/img/guitar_icon.png" alt=""></li>
-                        <li class="hobbies__name">Tocar baixo</li>
-                    </ul>
-                </div>
-
-                <div class="hobbies__box">
-                    <ul>
-                        <li class="hobbies__img"> <img src="./assets/img/headphones_icon.png" alt=""></li>
-                        <li class="hobbies__name">Ouvir música</li>
-                    </ul>
-                </div>
-
-                <div class="hobbies__box">
-                    <ul>
-                        <li class="hobbies__img"><img src="./assets/img/tv_icon.png" alt=""></li>
-                        <li class="hobbies__name">Assistir séries</li>
-                    </ul>
-                </div>
-
-                <div class="hobbies__box">
-                    <ul>
-                        <li class="hobbies__img"> <img src="./assets/img/forkspoon_icon.png" alt=""> </li>
-                        <li class="hobbies__name">Cozinhar</li>
-                    </ul>
-                </div>
-
-                <div class="hobbies__box">
-                    <ul>
-                        <li class="hobbies__img"> <img src="./assets/img/camera_icon.png" alt=""> </li>
-                        <li class="hobbies__name">Tirar fotos</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- Sessão de Histórico Acadêmico -->
-        <section class="academic">
-            <h2 class="academic__title" id="formacao">
-                <a href="#" title="Clique aqui para voltar ao topo da página">Formação Acadêmica</a>
-            </h>
-            <div class="academic__courses">
-                <div class="academic__courses__box">
-                    <ul class="academic__courses__list">
-                        <!-- Insira a logo de seu local de formação -->
-                        <li class="academic__courses__item__img"><img src="./assets/img/oracle-one-logo.png"></li>
-                        <li class="academic__courses__item__title">
-                            <h4>Formação Front End T5</h4>
-                        </li>
-                        <li class="academic__courses__item__subtitle">
-                            <p>2023 - Em andamento - Dev em Formação - Oracle + Alura </p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="academic__courses__box">
-                    <ul class="academic__courses__list">
-                        <!-- Insira a logo de seu local de formação -->
-                        <li class="academic__courses__item__img"><img src="./assets/img/icon_alura.svg"></li>
-                        <li class="academic__courses__item__title">
-                            <h4>Barbearia Alura </h4>
-                        </li>
-                        <li class="academic__courses__item__subtitle">
-                            <p>2023 - Alura + Oracle Next Education ONE </p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="academic__courses__box">
-                    <ul class="academic__courses__list">
-                        <!-- Insira a logo de seu local de formação -->
-                        <li class="academic__courses__item__img"><img src="./assets/img"></li>
-                        <li class="academic__courses__item__title">
-                            <h4>Técnico de Informática Internet </h4>
-                        </li>
-                        <li class="academic__courses__item__subtitle">
-                            <p>2015 - Instituto Federal de São Paulo </p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="academic__courses__box">
-                    <ul class="academic__courses__list">
-                        <!-- Insira a logo de seu local de formação -->
-                        <li class="academic__courses__item__img"><img src="assets/img/etec.jpg"></li>
-                        <li class="academic__courses__item__title">
-                            <h4>Técnico Mecânico </h4>./
-                        </li>
-                        <li class="academic__courses__item__subtitle">
-                            <p>2013 - ETEC - Caçapava/SP </p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- Sessão de Experiência Profissional/Projetos-->
-        <section class="experience">
-            <h2 class="experience__section__title" id="xp">
-                <a href="#" title="Clique aqui para voltar ao topo da página">Experiência Profissional</a>
-            </h2>
-            <div class="experiencie__box">
-                <!-- Insira a logo/captura de seu projeto/trabalho -->
-                <img class="experience__img" src="./assets/img/barbearia.jpg">
-                <div class="experience__info"><h3 class="experience__title">Barbearia Alura</h3>
-                    <h3 class="experience__text">2023 - Projeto de treinamento - Alura - Oracle Next Education ONE </h3>
-                    <div class="experience__description">
-                        <!-- Insira a link para demonstração do projeto no Github e/ou GithubPages -->
-                        <span class="experience__repo"><a
-                                href="https://github.com/PedroZef/alura-challenge-one-decodificador-de-texto"><button
-                                    class="experiencia__botao--repo">Repositório</button></a></span>
-                        <span class="experience__demo"><a
-                                href="https://pedrozef.github.io/alura-challenge-one-decodificador-de-texto/"><button
-                                    class="experiencia__botao--demo">Ver
-                                    demo</button></a></span>
+                    <div class="title__div" id="#sobremim">
+                        <h3 class="title__bio">
+                            Olá, sou o Pedro Zeferino da Silva e construo páginas web!
+                        </h3>
+                        <h4 class="title__subsection">
+                            Um Dev Front-End em Formação! Atualmente estou participando do projeto <strong>
+                            </strong>Oracle Next Education ONE na Alura.
+                        </h4>
+                        <ul class="title__network no-style">
+                            <li class="title__network__item">
+                                <a href="https://github.com/PedroZef" target="_blank" class="links">Github <img
+                                        src="./assets/imgs/arrow.png" />
+                                </a>
+                            </li>
+                            <li class="title__network__item">
+                                <a href="https://www.linkedin.com/in/pedro-zeferino-da-silva-30654a121" target="_blank"
+                                    class="links">Linkedin <img src="./assets/imgs/arrow.png" /></a>
+                            </li>
+                            <li class="title__network__item">
+                                <a href="https://www.instagram.com/https://instagram.com/pedrozeferinodasilva"
+                                    target="_blank" class="links">Instagram <img src="./assets/imgs/arrow.png" /></a>
+                            </li>
+                            <li class="title__network__item">
+                                <a href="https://onlinecurriculo.com.br/r/ymyltlHY2" target="_blank"
+                                    class="links">Curriculo Online<img src="./assets/imgs/arrow.png" /></a>
+                            </li>
+                            <li class="title__network__item">
+                                <a href="./assets/curriculo/curriculo-pzs.jpeg" target="_blank" class="links">Curriculo
+                                    PDF <img src="./assets/imgs/arrow.png" /></a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </div>
+            </section>
+            <!-- Sessão sobre mim -->
+            <section class="about sections" id="sobremim">
+                <div class="about__container">
+                    <h3 class="about__title">
+                        <a href="#" title="Clique aqui para voltar ao topo da página">
+                            Sobre mim
+                        </a>
+                    </h3>
+                    <p class="about__paragraph">
+                        Sou um Dev em formação apaixonado por criar experiências digitais.
+                        Agora, decidi trilhar um novo caminho do desenvolvimento web.
+                    </p>
+                    <p class="about__paragraph">
+                        Ao longo dos anos de trabalho na área de mecânica, onde me
+                        concentrei me formando técnico mecânico diesel adquirir muita  experiência profissional até me aposentar.
+                        No entanto, senti a necessidade de expandir minha paleta de conhecimentos, iniciando
+                        na programçao onde me formei técnico de informática - 2015, algo mais dinâmico e interativo.
+                    </p>
+                    <p class="about__paragraph">Tenho pontos fortes em resolução de conflitos, trabalho em equipe.
+                        Buscandos novos desafios e oportunidades para desenvolver como desenvolvedor.
+                    </p>
 
-            <div class="experiencie__box">
-                <!-- Insira a logo/captura de seu projeto/trabalho -->
-                <img class="experience__img" src="./assets/img/rocketset_icon.png">
-                <div class="experience__info"><h3 class="experience__title">Rocketset Explorer2</h3>
-                    <h4 class="experience__text">Projeto de treinamento Rocketset Criação do Site </h4>
-                    <div class="experience__description">
-                        <!-- Insira a link para demonstração do projeto no Github e/ou GithubPages -->
-                        <span class="experience__repo"><a href="https://pedrozef.github.io/rocketset-explorer2/"><button
-                                    class="experiencia__botao--repo">Repositório</button></a></span>
-                        <span class="experience__demo"><a href="https://pedrozef.github.io/rocketset-explorer2/"><button
-                                    class="experiencia__botao--demo">Ver
-                                    demo</button></a></span>
-                    </div>
                 </div>
-            </div>
+            </section>
+            <!-- Sessão de Skills/Habilidades -->
+            <section class="skills sections" id="skills">
+                <div class="skills__container">
+                    <h3 class="skills__title secondary-title">
+                        <a href="#" title="Clique aqui para voltar ao topo da página">
+                            Skills
+                        </a>
+                    </h3>
 
-            <div class="experiencie__box">
-                <!-- Insira a logo de seu projeto/trabalho -->
-                <img class="experience__img" src="./assets/img/decodificador.png">
-                <div class="experience__info"><h2 class="experience__title">Decodificador de texto</h2>
-                    <h3 class="experience__text">Challenge Alura Codificador </h3>
-                    <div class="experience__description">
-                        <!-- Insira a link para demonstração do projeto no Github e/ou GithubPages -->
-                        <span class="experience__repo"><a href=""><button
-                                    class="experiencia__botao--repo">Repositório</button></a></span>
-                        <span class="experience__demo"><a href=""><button class="experiencia__botao--demo">Ver
-                                    demo</button></a></span>
-                    </div>
-                </div>
-            </div>
+                    <ul class="skills__line no-style">
+                        <li class="skills__box">
+                            <ul class="no-style">
+                                <li class="skills__img">
+                                    <img src="./assets/imgs/htlm.png" />
+                                </li>
+                                <li class="skills__name">Html 5</li>
+                            </ul>
+                        </li>
 
-            <div class="experiencie__box">
-                <!-- Insira a logo de seu projeto/trabalho -->
-                <img class="experience__img" src="">
-                <div class="experience__info"><h2 class="experience__title">Jogo criado com HTML, CSS e JavaScript</h2>
-                    <h3 class="experience__text">Challenge Oracle </h3>
-                    <div class="experience__description">
-                        <!-- Insira a link para demonstração do projeto no Github e/ou GithubPages -->
-                        <span class="experience__repo"><a href=""><button
-                                    class="experiencia__botao--repo">Repositório</button></a></span>
-                        <span class="experience__demo"><a href=""><button class="experiencia__botao--demo">Ver
-                                    demo</button></a></span>
-                    </div>
+                        <li class="skills__box">
+                            <ul class="no-style">
+                                <li class="skills__img">
+                                    <img src="./assets/imgs/js_icon.png" alt="javaScript" />
+                                </li>
+                                <li class="skills__name">Javascript</li>
+                            </ul>
+                        </li>
+
+                        <li class="skills__box">
+                            <ul class="no-style">
+                                <li class="skills__img">
+                                    <img src="./assets/imgs/css_icon.png" alt="CSS3" />
+                                </li>
+                                <li class="skills__name">CSS3</li>
+                            </ul>
+                        </li>
+
+                        <li class="skills__box">
+                            <ul class="no-style">
+                                <li class="skills__img">
+                                    <img src="./assets/imgs/react_icon.png" alt="ReactJs" />
+                                </li>
+                                <li class="skills__name">React JS</li>
+                            </ul>
+                        </li>
+
+                        <li class="skills__box">
+                            <ul class="no-style">
+                                <li class="skills__img">
+                                    <img src="./assets/imgs/nodejs_icon.png" alt="NodeJS" />
+                                </li>
+                                <li class="skills__name">NodeJS</li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
-            </div>
+            </section>
+            <!-- Sessão de Hobbies -->
+            <section class="hobbies sections" id="hobbies">
+                <div class="hobbies__container hobbies--extrapadding">
+                    <h3 class="hobbies__title secondary-title">
+                        <a href="#" title="Clique aqui para voltar ao topo da página">
+                            Hobbies
+                        </a>
+                    </h3>
+
+                    <ul class="hobbies__line no-style">
+                        <li class="hobbies__box">
+                            <ul class="no-style">
+                                <li class="hobbies__img">
+                                    <img src="./assets/imgs/camera_icon.png" alt="Câmera fotográfica" />
+                                </li>
+                                <li class="hobbies__name">Fotografias</li>
+                            </ul>
+                        </li>
+
+                        <li class="hobbies__box">
+                            <ul class="no-style">
+                                <li class="hobbies__img">
+                                    <img src="./assets/imgs/phones_icon.png" alt="Ouvir Música" />
+                                </li>
+                                <li class="hobbies__name">Ouvir música</li>
+                            </ul>
+                        </li>
+
+                        <li class="hobbies__box">
+                            <ul class="no-style">
+                                <li class="hobbies__img">
+                                    <img src="./assets/imgs/tv_icon.png" alt="Assitir Séries" />
+                                </li>
+                                <li class="hobbies__name">Assistir séries</li>
+                            </ul>
+                        </li>
+
+                        <li class="hobbies__box">
+                            <ul class="no-style">
+                                <li class="hobbies__img">
+                                    <img src="./assets/imgs/academia.png" alt="Academia" />
+                                </li>
+                                <li class="hobbies__name">Academia</li>
+                            </ul>
+                        </li>
+
+                        <li class="hobbies__box">
+                            <ul class="no-style">
+                                <li class="hobbies__img">
+                                    <img src="./assets/imgs/oculos.png" alt="Óculos" />
+                                </li>
+                                <li class="hobbies__name">Ler Livros</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- Sessão de Histórico Acadêmico -->
+            <section class="academic sections" id="formacao">
+                <div class="academic__container">
+                    <h3 class="academic__title secondary-title">
+                        <a href="#" title="Clique aqui para voltar ao topo da página">
+                            Formação Acadêmica
+                        </a>
+                    </h3>
+                    <ul class="academic__courses no-style">
+                        <li class="academic__courses__box">
+                            <div class="academic__courses__box__logo">
+                                <img class="academic__courses__box__logo__img" src="./assets/imgs/one-logo.png"
+                                    alt="Alura" />
+                            </div>
+                            <div class="academic__courses__box__title">Formação Front-End</div>
+                            <div class="academic__courses__box__subtitle">2023 -Em Andamento - Alura</div>
+                        </li>
+                        </li>
+                        <li class="academic__courses__box">
+                            <div class="academic__courses__box__logo">
+                                <img class="academic__courses__box__logo__img" src="./assets/imgs/ifsp.png"
+                                    alt="IFSP" />
+                            </div>
+                            <div class="academic__courses__box__title">
+                                Técnico de Informática para Internet
+                            </div>
+                            <div class="academic__courses__box__subtitle">
+                                2015 - Concluído
+                            </div>
+                        </li>
+
+                        <li class="academic__courses__box">
+                            <div class="academic__courses__box__logo">
+                                <img class="academic__courses__box__logo__img" src="./assets/imgs/etec.jpg"
+                                    alt="Etec" />
+                            </div>
+                            <div class="academic__courses__box__title">
+                                Técnico Mecânico
+                            </div>
+                            <div class="academic__courses__box__subtitle">
+                                2013 - Concluído
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Sessão de Projetos-->
+            <section class="experience sections" id="xp">
+                <div class="experience__container">
+                    <h2 class="experience__section__title secondary-title">
+                        <a href="#" title="Clique aqui para voltar ao topo da página">
+                            Projetos
+                        </a>
+                    </h2>
+                    <ul class="experience__projects no-style">
+                        <li class="experience__box">
+                            <div>
+                                <img class="experience__img" src="./assets/imgs/decodificador.png"
+                                    alt="Decodificador de Textos" />
+                            </div>
+                            <div class="experience__info">
+                                <h2 class="experience__title">Decodificador de Textos</h2>
+                                <h3 class="experience__text">
+                                    2023 - Challenge Alura One, com HTML, CSS e Javascript
+                                </h3>
+                                <div class="experience__description">
+                                    <!-- Insira a link para demonstração do projeto no Github e/ou GithubPages -->
+                                    <span class="experience__repo"><a
+                                            href="https://github.com/PedroZef/alura-challenge-one-decodificador-de-texto"
+                                            target="_blank"><button class="experience__button experience__button--repo">
+                                                Repositório
+                                            </button></a></span>
+                                    <span class="experience__demo"><a
+                                            href="https://pedrozef.github.io/alura-challenge-one-decodificador-de-texto/"
+                                            target="_blank"><button class="experience__button experience__button--demo">
+                                                Demo
+                                            </button></a></span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="experience__box">
+                            <div>
+                                <img class="experience__img" src="./assets/imgs/rocketset_icon.png" alt="Rocketset" />
+                            </div>
+                            <div class="experience__info">
+                                <h2 class="experience__title">Rocketset Explorer2</h2>
+                                <h3 class="experience__text">
+                                    2023 - Projeto de treinamento Rocketset Criação Site com HTML e CSS
+                                </h3>
+                                <div class="experience__description">
+                                    <!-- Insira a link para demonstração do projeto no Github e/ou GithubPages -->
+                                    <span class="experience__repo"><a
+                                            href="https://pedrozef.github.io/rocketset-explorer2/"
+                                            target="_blank"><button class="experience__button experience__button--repo">
+                                                Repositório
+                                            </button></a></span>
+                                    <span class="experience__demo"><a
+                                            href="https://pedrozef.github.io/rocketset-explorer2/"
+                                            target="_blank"><button class="experience__button experience__button--demo">
+                                                Demo
+                                            </button></a></span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="experience__box">
+                            <div>
+                                <img class="experience__img" src="./assets/imgs/barbearia.jpg"
+                                    alt="Quem é esse Pokémon" />
+                            </div>
+                            <div class="experience__info">
+                                <h2 class="experience__title">Barbearia Alura Turma5 One</h2>
+                                <h3 class="experience__text">
+                                    2023 - Projeto de treinamento do Curso JavaScript e CSS3
+                                    Alura + Oracle Next Education"
+                                </h3>
+                                <div class="experience__description">
+                                    <!-- Insira a link para demonstração do projeto no Github e/ou GithubPages -->
+                                    <span class="experience__repo"><a
+                                            href="https://github.com/PedroZef/barbearia-alura_turma_one5"
+                                            target="_blank"><button class="experience__button experience__button--repo">
+                                                Repositório
+                                            </button></a></span>
+                                    <span class="experience__demo"><a
+                                            href="https://pedrozef.github.io/barbearia-alura_turma_one5/"
+                                            target="_blank"><button class="experience__button experience__button--demo">
+                                                Demo
+                                            </button></a></span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
 
             <!-- Sessão de Contato -->
-            <section class="formcontato">
-                <div id="contato" class="formcontato__contacto">
+            <!-- Sessão de Contato -->
+            <section class="formcontato sections" id="contato">
+                <div class="formcontato__container">
                     <div class="formcontato--esquerda">
-                        <img class="formcontato__img" src="./assets/img/contact_image.png">
+                        <img class="formcontato__img" src="./assets/imgs/contact_image.png" alt="Imagem de contato" />
                     </div>
                     <div class="formcontato__text">
-                        <h2 class="formcontato__title">Contato</h2>
-                        <h3 class="formcontato__subtext">Quer entrar em contato comigo?</h3>
-                        <h3 class="formcontato__subtext">Preencha o formulário ao lado e entrarei em contato o mais
-                            rápido possível. </h3>
-                        <form id="form" class="formcontato__form" action="https://formsubmit.co/zeferino4851pedro@gmail.com " method="POST">
-                            <input id="nome" class="formcontato__input required" type="text" id="nome" placeholder="Nome" name="name" required>
-                            <span class="span-required"> Por favor, preencha seu nome</span>
-                        
-                        
-                            <input id="email" class="formcontato__input required" name="name" type="email" id="email" placeholder="Email"
-                                name="e-mail" required>
-                            <span class="span-required"> Digite um e-mail válido</span>
-                        
-                            <input id="assunto" class="formcontato__input required" type="text" id="assunto" placeholder="Assunto"
-                                name="assunto" required>
-                            <span class="span-required"> Campo obrigatório</span>
-                        
-                            <textarea class="formcontato__textarea required" rows="5" cols="40" id="mensagem" name="message"
-                                placeholder="Sua mensagem" name="name" required></textarea>
-                            <button class="formcontato__botao" type="submit" onclick="validar();">Enviar mensagem</button>
-                        
-                            <input type="hidden" name="_subject" value="Novo Contato!">
-                            <input type="text" name="_honey" style="display:none">
-                            <input type="hidden" name="_captcha" value="false">
-                    
-                            </form>
-                    </div>     
-            </div>            
-        </section> 
-        <!-- Sessão de Footer/Rodapé-->
-        <section class="footer">
-            <div class="footer__rodape">
-                <p class="footer__text">
-                    Desenvolvido por Pedro Zeferino da Silva<br />
-                    &copy; 2023
-                </p>
-            </div>
-        </section>
+                        <h2 class="formcontato__title secondary-title">
+                            <a href="#"  title="Clique aqui para voltar ao topo da página">
+                                Contato
+                            </a>
+                        </h2>
+                        <div class="formcontato__subtext minor-title">
+                            <p>
+                                Quer entrar em contato comigo? <br />
+
+                                Preencha o formulário abaixo e entrarei em contato o mais rápido
+                                possível.
+                            </p>
+                        </div>
+
+                        <form class="formcontato__form" id="meuFormulario"
+                            action="https://formsubmit.co/zeferino4851pedro@gmail.com" method="POST">
+                            <div class="formcontato__area">
+                                <input class="formcontato__input" type="text" placeholder=" " required name="nome"
+                                    minlength="4" pattern="^[A-ZÀ-Úa-zà-ú]+(?: [A-ZÀ-Úa-zà-ú]+)*$" />
+                                <label class="formcontato__label">Nome</label>
+                                <span class="formcontato__error"></span>
+                            </div>
+
+                            <div class="formcontato__area">
+                                <input class="formcontato__input" type="email" placeholder=" " required name="email"
+                                    minlength="5" />
+                                <label class="formcontato__label">E-mail</label>
+                                <span class="formcontato__error"></span>
+                            </div>
+
+                            <div class="formcontato__area">
+                                <input class="formcontato__input" type="text" placeholder=" " required name="assunto"
+                                    minlength="4" />
+                                <label class="formcontato__label">Assunto</label>
+                                <span class="formcontato__error"></span>
+                            </div>
+
+                            <div class="formcontato__area">
+                                <textarea class="formcontato__input formcontato__input--textarea" id="textarea" required
+                                    name="mensagem"></textarea>
+                                <label for="textarea" class="formcontato__label--textarea">Mensagem</label><span
+                                    class="formcontato__error"></span>
+                            </div>
+
+                            <button type="submit" class="formcontato__botao">
+                                Enviar mensagem
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <section class="footer">
+                <div class="footer__text">
+                    <p>Desenvolvido por Pedro Zeferino da Silva @ 2023</p>
+                </div>
+            </section> 
+        </div>
         <!-- Script Linkado do seu documento de JavaScript -->
-            <script src="validate.js"></script>
+        <script src="./assets/js/script.js"></script>
     </body>
 
 </html>
