@@ -9,6 +9,7 @@ coloque nas sessões indicadas*/
 @import url("professional.css");
 @import url("skills-hobbies.css");
 @import url("title.css");
+@import url("logo.css");
 
 :root {
     /*Insira a variavel das outras cores inspecionando o modelo do figma*/
@@ -17,7 +18,7 @@ coloque nas sessões indicadas*/
     --azul10: #EAF2FD;
     --azul20: #2264c0;
     --branco: #fffdfd;
-    --cards-colors:  white;
+    --cards-colors: white;
     --link-color: #000;
 
     --font-color: #464646;
@@ -47,7 +48,7 @@ li {
 
 a {
     text-decoration: none;
-   
+
 }
 
 .secondary-title {
@@ -92,5 +93,4 @@ a {
 @media (max-width: 768px) {}
 
 /*Mobile*/
-@media (max-width: 425px) {
-}
+@media (max-width: 425px) {}

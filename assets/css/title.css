@@ -1,22 +1,25 @@
 section.title {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 /* Profile animation */
 
+prof
+
 .title__profile__container {
-  perspective: 800px;
+  perspective: 900px;
+  overflow: hidden;
 }
 
 .tittle__profile {
   position: relative;
-  width: 368px;
-  height: 368px;
+  width: 358px;
+  height: 358px;
   transform-style: preserve-3d;
   transition: transform 0.5s;
   box-shadow: 0px 8px 8px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
+  border-radius: 60%;
 }
 
 .tittle__profile:hover {
@@ -31,14 +34,13 @@ section.title {
   backface-visibility: hidden;
   box-shadow: 0px 8px 8px 8px rgba(61, 59, 59, 0.1);
   border-radius: 50%;
-  overflow: hidden;
+  
 }
 
 .title__profile--front {
   transform: rotateY(0deg);
 }
 
-.title__profile--back,
 .title__profile--back {
   transform: rotateY(180deg);
   background-color: #4c2dd4;
@@ -47,14 +49,14 @@ section.title {
   display: flex;
   align-items: center;
   justify-content: center;
-  
+  overflow: hidden;
 }
 
 .profile-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 40%;
+  border-radius: 60%;
 }
 
 .title__profile--back span {
@@ -79,7 +81,7 @@ section.title {
   height: 368px;
   width: 368px;
   border-radius: 60%;
-  
+
 }
 
 .title__div {
@@ -107,17 +109,17 @@ section.title {
   margin: 1em;
 }
 
-    .title__network__item {
-      display: flex;
-      justify-content: space-around;
-    }
+.title__network__item {
+  display: flex;
+  justify-content: space-between;
+}
 
 
 /* Tablets */
 @media (max-width: 768px) {
   section.title {
     max-width: calc(43em);
-    
+
   }
 
   .title__container {
@@ -139,7 +141,7 @@ section.title {
     height: 156px;
     width: 156px;
     border-radius: 50%;
-    float: right;
+    float: left;
 
   }
 
@@ -156,21 +158,18 @@ section.title {
     gap: 4em;
   }
 
-  .title__network__item {
-    padding: 1em 0;
-  }
-
-   
   .title__profile--back span {
     font-size: 14px;
-    
+
   }
 }
+
 /*Mobile*/
 @media (max-width: 425px) {
   section.title {
     max-width: calc(22em);
   }
+
   .title__container {
     flex-direction: column;
     align-items: baseline;
@@ -184,9 +183,5 @@ section.title {
   .title__network {
     gap: 0.5em;
   }
-
-        .title__network__item {
-          padding: 1em 0;
-        }
 
 }
