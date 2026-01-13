@@ -38,13 +38,39 @@ section.menu {
   gap: 1em;
 }
 
+.menu__button-mobile {
+  display: none;
+}
+
+.menu__list--active {
+  display: flex !important;
+  flex-direction: column;
+  position: absolute;
+  top: 90px;
+  right: 20px;
+  background-color: var(--cards-colors);
+  box-shadow: 0px 8px 8px 8px rgba(0, 0, 0, 0.1);
+  padding: 1em;
+  gap: 1em;
+  border-radius: 10px;
+}
+
 /* Tablets */
 @media (max-width: 768px) {
   section.menu {
     max-width: calc(43em);
   }
-  .menu__list .menu__list__item:not(:last-child) {
+  .menu__list {
     display: none;
+  }
+  .menu__button-mobile {
+    display: block;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  .menu__button-mobile--icon {
+    width: 24px;
   }
 }
 /*Mobile*/

@@ -1,0 +1,50 @@
+html[data-theme='dark'] {
+    --background-color: #1a1a1a;
+    --azul10: #1f1f1f;
+    --azul20: #90b8f0;
+    --branco: #121212;
+    --cards-colors: #2a2a2a;
+    --link-color: #699cff;
+    --font-color: #f5f5f5;
+}
+
+#theme-toggle-container {
+    display: flex;
+    align-items: center;
+}
+
+#theme-toggle {
+    background: var(--azul20);
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+    height: 26px;
+    width: 50px;
+    transform: scale(1.5);
+    border: none;
+}
+
+#theme-toggle::after {
+    content: "";
+    background-color: var(--branco);
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 22px;
+    width: 22px;
+    transition: 0.3s;
+}
+
+html[data-theme='dark'] #theme-toggle::after {
+    left: calc(100% - 24px);
+}
+
+html[data-theme='dark'] .title__profile--back {
+    background-color: #3a22a0;
+    color: #f5f5f5;
+}

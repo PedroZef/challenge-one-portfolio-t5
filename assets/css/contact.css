@@ -24,11 +24,11 @@ section.formcontato {
 }
 
 .formcontato__title {
-  margin: 0;
+  margin: 2rem 1rem 2rem;
 }
 
-.formcontato__subtext {
-  margin-bottom: 1em;
+.formcontato__subtext .minor-title p {
+  margin-bottom: 4em;
 }
 
 .formcontato--esquerda {
@@ -46,10 +46,12 @@ section.formcontato {
   color: rgb(224, 94, 7);
   margin-top: 1em;
 }
+
 .formcontato__area {
   position: relative;
   padding-top: 13px;
 }
+
 /* Inputs */
 
 .formcontato__input {
@@ -65,10 +67,10 @@ section.formcontato {
   outline: none;
   height: 30px;
   width: 97.5%;
-  transition: all 0.3s ease-out;
   margin-bottom: 1em;
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 .formcontato__input:focus {
@@ -93,8 +95,8 @@ section.formcontato {
   -moz-transition: all 0.3s ease-out;
 }
 
-.formcontato__input:focus + .formcontato__label,
-.formcontato__input:not(:placeholder-shown) + .formcontato__label {
+.formcontato__input:focus+.formcontato__label,
+.formcontato__input:not(:placeholder-shown)+.formcontato__label {
   font-size: 12px;
   margin-top: 0;
   color: var(--highlight-form);
@@ -119,8 +121,8 @@ section.formcontato {
   color: #999;
 }
 
-.formcontato__input--textarea:focus + .formcontato__label--textarea,
-.formcontato__input--textarea:valid + .formcontato__label--textarea {
+.formcontato__input--textarea:focus+.formcontato__label--textarea,
+.formcontato__input--textarea:valid+.formcontato__label--textarea {
   top: 20px;
   left: 12px;
   font-size: 12px;
@@ -145,12 +147,13 @@ section.formcontato {
     padding-top: 4em;
     padding-bottom: 2em;
   }
+
   .formcontato--esquerda {
     display: none;
   }
 
-  .formcontato__subtext {
-    margin-bottom: 0;
+  .formcontato__subtext .minor-title p {
+    margin-bottom: 4rem;
   }
 }
 
@@ -161,14 +164,20 @@ section.formcontato {
     padding-top: 1em;
   }
 
-    .formcontato__text  {
-      text-align: center;
 
-    }
+  .formcontato__subtext .minor-title p {
+    margin-bottom: 4rem;
+  }
 
-    .formcontato__text a {
-      padding: 1e,;
-    }
+  .formcontato__text {
+    text-align: center;
+
+  }
+
+  .formcontato__text a {
+    padding: 1rem;
+    font-size: 1rem;
+  }
 
   .formcontato__input {
     width: 96%;

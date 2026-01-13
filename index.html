@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Folha de estilo de CSS Linkado -->
-    <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/dark-mode.css">
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,9 +22,7 @@
 
 <body>
     <!-- Sessão Header  -->
-
-    <body class="body">
-        <div class="all">
+    <div class="all">
             <!-- Sessão de Menu  -->
             <section class="menu sections">
                 <div class="menu__container">
@@ -33,8 +31,9 @@
                             <img src="./assets/imgs/vector.png" alt="Simbolo vector" />
                             <p>Pedro Zefrino da Silva</p>
                         </div>
-                        <nav>
-                            <ul class="menu__list links no-style">
+                       
+                        <nav class="menu__nav">
+                            <ul class="menu__list links no-style menu__list-js">
                                 <li class="menu__list__item">
                                     <a href="#sobremim" class="links">Sobre mim</a>
                                 </li>
@@ -53,8 +52,15 @@
                                 <li class="menu__list__item">
                                     <a href="#contato" class="links">Contato@hotmail.com</a>
                                 </li>
+                                <li class="menu__list__item" id="theme-toggle-container">
+                                    <button class="menu__list__item__toggle" id="theme-toggle" title="Alternar tema escuro/claro">
+                                    </button>
+                                </li>
                             </ul>
                         </nav>
+                        <button class="menu__button-mobile">
+                            <img class="menu__button-mobile--icon" src="./assets/imgs/menu-mobile.svg" alt="Menu mobile" />
+                        </button>
                     </header>
                 </div>
             </section>
@@ -64,7 +70,7 @@
                     <div class="title__profile__container">
                         <div class="tittle__profile" onclick="rotateProfile()">
                             <div class="title__profile--front">
-                                <img class="title__profile--img" src="./assets/imgs/foto-perfil.jpg"
+                                <img class="title__profile--img" src="./assets/imgs/my-fhoto.jpg"
                                     alt="Foto de perfil" />
                             </div>
                             <div class="title__profile--back">
@@ -84,27 +90,26 @@
                         </h4>
                         <ul class="title__network no-style">
                             <li class="title__network__item">
-                                <a href="https://github.com/PedroZef" target="_blank" class="links">Github <img
-                                        src="./assets/imgs/arrow.png" />
+                                <a href="https://github.com/PedroZef" target="_blank" rel="noopener" class="links">Github <img
+                                        src="./assets/imgs/arrow.png" alt="Arrow icon" />
                                 </a>
                             </li>
                             <li class="title__network__item">
-                                <a href="https://www.linkedin.com/in/pedro-zeferino-da-silva-30654a121" target="_blank"
-                                    class="links">Linkedin <img src="./assets/imgs/arrow.png" /></a>
+                                <a href="https://www.linkedin.com/in/pedro-zeferino-da-silva-625394330" target="_blank" rel="noopener"
+                                    class="links">Linkedin <img src="./assets/imgs/arrow.png" alt="Arrow icon" /></a>
                             </li>
                             <li class="title__network__item">
-                                <a href="https://www.instagram.com/https://instagram.com/pedrozeferinodasilva"
-                                    target="_blank" class="links">Instagram <img src="./assets/imgs/arrow.png" /></a>
+                                <a href="https://www.instagram.com/https://instagram.com/pedrozeferino5925"
+                                    target="_blank" rel="noopener" class="links">Instagram <img src="./assets/imgs/arrow.png" alt="Arrow icon" /></a>
                             </li>
                             <li class="title__network__item">
-                                <a href="https://onlinecurriculo.com.br/r/ymyltlHY2" target="_blank"
-                                    class="links">Curriculo Online<img src="./assets/imgs/arrow.png" /></a>
+                                <a href="https://onlinecurriculo.com.br/r/ymyltlHY2" target="_blank" rel="noopener"
+                                    class="links">Curriculo Online<img src="./assets/imgs/arrow.png" alt="Arrow icon" /></a>
                             </li>
                             <li class="title__network__item">
-                                <a href="./assets/curriculo/curriculo-pzs.jpeg" target="_blank" class="links">Curriculo
-                                    PDF <img src="./assets/imgs/arrow.png" /></a>
+                                <a href="./assets/curriculo/curriculo-pzs.jpeg" target="_blank" rel="noopener" class="links">Curriculo
+                                    PDF <img src="./assets/imgs/arrow.png" alt="Arrow icon" /></a>
                             </li>
-                        </ul>
                     </div>
                 </div>
             </section>
@@ -117,7 +122,7 @@
                         </a>
                     </h3>
                     <p class="about__paragraph">
-                        Sou o Pedro Zeferino da Silva com 61 anos de nacionalidade brasileira.
+                        Sou o Pedro Zeferino da Silva com 63 anos de nacionalidade brasileira.
                         Agora, decidi trilhar um novo caminho no desenvolvimento web.
                     </p>
 
@@ -136,7 +141,7 @@
                         <li class="skills__box">
                             <ul class="no-style">
                                 <li class="skills__img">
-                                    <img src="./assets/imgs/htlm.png" />
+                                    <img src="./assets/imgs/html.png" alt="HTML 5" />
                                 </li>
                                 <li class="skills__name">Html 5</li>
                             </ul>
@@ -246,15 +251,25 @@
                         </a>
                     </h3>
                     <ul class="academic__courses no-style">
+
+                        <li class="academic__courses__box">
+                            <div class="academic__courses__box__logo">
+                                <img class="academic__courses__box__logo__img" src="./assets/imgs/FAT.png"
+                                    alt="Alura" />
+                            </div>
+                            <div class="academic__courses__box__title">Desenvolvimento de Sistema Em Formação </div>
+                            <div class="academic__courses__box__subtitle">2025 a 2026 - FAT - Fundação ao Apoio à Tecnologia </div>
+                        </li>
+                        
                         <li class="academic__courses__box">
                             <div class="academic__courses__box__logo">
                                 <img class="academic__courses__box__logo__img" src="./assets/imgs/one-logo.png"
                                     alt="Alura" />
                             </div>
                             <div class="academic__courses__box__title">Formação Front-End</div>
-                            <div class="academic__courses__box__subtitle">2023 -Em Andamento - Alura</div>
+                            <div class="academic__courses__box__subtitle">2023 - Alura</div>
                         </li>
-                        </li>
+                        
                         <li class="academic__courses__box">
                             <div class="academic__courses__box__logo">
                                 <img class="academic__courses__box__logo__img" src="./assets/imgs/ifsp.png"
@@ -295,6 +310,31 @@
                     <ul class="experience__projects no-style">
                         <li class="experience__box">
                             <div>
+                                <img class="experience__img" src="./assets/imgs/previsao_tempo.png"
+                                    alt="Decodificador de Textos" />
+                            </div>
+                            <div class="experience__info">
+                                <h2 class="experience__title">Ptrevisao do Tempo</h2>
+                                <h3 class="experience__text">
+                                    2025 - Projeto Previsão do Tempo com Node.js, TS, Javascript e CSS.
+                                </h3>
+                                <div class="experience__description">
+                                    <!-- Insira a link para demonstração do projeto no Github e/ou GithubPages -->
+                                    <span class="experience__repo"><a
+                                            href="https://github.com/PedroZef/previsao_tempo/"
+                                            target="_blank" rel="noopener"><button class="experience__button experience__button--repo">
+                                                Repositório
+                                            </button></a></span>
+                                    <span class="experience__demo"><a
+                                            href="https://pedrozef.github.io/previsao_tempo/"
+                                            target="_blank" rel="noopener"><button class="experience__button experience__button--demo">
+                                                Demo
+                                            </button></a></span>
+                            </div>
+                        </li>
+
+                        <li class="experience__box">
+                            <div>
                                 <img class="experience__img" src="./assets/imgs/decodificador.png"
                                     alt="Decodificador de Textos" />
                             </div>
@@ -306,16 +346,15 @@
                                 <div class="experience__description">
                                     <!-- Insira a link para demonstração do projeto no Github e/ou GithubPages -->
                                     <span class="experience__repo"><a
-                                            href="https://github.com/PedroZef/alura-challenge-one-decodificador-de-texto"
-                                            target="_blank"><button class="experience__button experience__button--repo">
+                                            href="https://github.com/PedroZef/encriptador_challenge-one"
+                                            target="_blank" rel="noopener"><button class="experience__button experience__button--repo">
                                                 Repositório
                                             </button></a></span>
                                     <span class="experience__demo"><a
-                                            href="https://pedrozef.github.io/alura-challenge-one-decodificador-de-texto/"
-                                            target="_blank"><button class="experience__button experience__button--demo">
+                                            href="https://pedrozef.github.io/encriptador_challenge-one/"
+                                            target="_blank" rel="noopener"><button class="experience__button experience__button--demo">
                                                 Demo
                                             </button></a></span>
-                                </div>
                             </div>
                         </li>
                         <li class="experience__box">
@@ -331,15 +370,14 @@
                                     <!-- Insira a link para demonstração do projeto no Github e/ou GithubPages -->
                                     <span class="experience__repo"><a
                                             href="https://pedrozef.github.io/rocketset-explorer2/"
-                                            target="_blank"><button class="experience__button experience__button--repo">
+                                            target="_blank" rel="noopener"><button class="experience__button experience__button--repo">
                                                 Repositório
                                             </button></a></span>
                                     <span class="experience__demo"><a
                                             href="https://pedrozef.github.io/rocketset-explorer2/"
-                                            target="_blank"><button class="experience__button experience__button--demo">
+                                            target="_blank" rel="noopener"><button class="experience__button experience__button--demo">
                                                 Demo
                                             </button></a></span>
-                                </div>
                             </div>
                         </li>
                         <li class="experience__box">
@@ -357,22 +395,20 @@
                                     <!-- Insira a link para demonstração do projeto no Github e/ou GithubPages -->
                                     <span class="experience__repo"><a
                                             href="https://github.com/PedroZef/barbearia-alura_turma_one5"
-                                            target="_blank"><button class="experience__button experience__button--repo">
+                                            target="_blank" rel="noopener"><button class="experience__button experience__button--repo">
                                                 Repositório
                                             </button></a></span>
                                     <span class="experience__demo"><a
                                             href="https://pedrozef.github.io/barbearia-alura_turma_one5/"
-                                            target="_blank"><button class="experience__button experience__button--demo">
+                                            target="_blank" rel="noopener"><button class="experience__button experience__button--demo">
                                                 Demo
                                             </button></a></span>
-                                </div>
                             </div>
                         </li>
                     </ul>
                 </div>
             </section>
 
-            <!-- Sessão de Contato -->
             <!-- Sessão de Contato -->
             <section class="formcontato sections" id="contato">
                 <div class="formcontato__container">
@@ -397,29 +433,29 @@
                         <form class="formcontato__form" id="meuFormulario"
                             action="https://formsubmit.co/zeferino4851pedro@gmail.com" method="POST">
                             <div class="formcontato__area">
-                                <input class="formcontato__input" type="text" placeholder=" " required name="nome"
-                                    minlength="4" pattern="^[A-ZÀ-Úa-zà-ú]+(?: [A-ZÀ-Úa-zà-ú]+)*$" />
-                                <label class="formcontato__label">Nome</label>
+                                <input class="formcontato__input" type="text" required name="nome" id="nome"
+                                    minlength="4" pattern="^[A-ZÀ-Úa-zà-ú]+(?: [A-ZÀ-Úa-zà-ú]+)*$" title="Digite seu nome completo" />
+                                <label class="formcontato__label" for="nome">Nome</label>
                                 <span class="formcontato__error"></span>
                             </div>
 
                             <div class="formcontato__area">
-                                <input class="formcontato__input" type="email" placeholder=" " required name="email"
-                                    minlength="5" />
-                                <label class="formcontato__label">E-mail</label>
+                                <input class="formcontato__input" type="email" required name="email" id="email"
+                                    minlength="5" title="Digite um e-mail válido" />
+                                <label class="formcontato__label" for="email">E-mail</label>
                                 <span class="formcontato__error"></span>
                             </div>
 
                             <div class="formcontato__area">
-                                <input class="formcontato__input" type="text" placeholder=" " required name="assunto"
-                                    minlength="4" />
-                                <label class="formcontato__label">Assunto</label>
+                                <input class="formcontato__input" type="text" required name="assunto" id="assunto"
+                                    minlength="4" title="Digite o assunto da mensagem" />
+                                <label class="formcontato__label" for="assunto">Assunto</label>
                                 <span class="formcontato__error"></span>
                             </div>
 
                             <div class="formcontato__area">
                                 <textarea class="formcontato__input formcontato__input--textarea" id="textarea" required
-                                    name="mensagem"></textarea>
+                                    name="mensagem" title="Digite sua mensagem"></textarea>
                                 <label for="textarea" class="formcontato__label--textarea">Mensagem</label><span
                                     class="formcontato__error"></span>
                             </div>
@@ -434,11 +470,12 @@
 
             <section class="footer">
                 <div class="footer__text">
-                    <p>Desenvolvido por <br /> Pedro Zeferino da Silva @ 2023</p>
+                    <p>&copy; 2026 - Pedro Zeferino da Silva</p>
                 </div>
             </section>
         </div>
         <!-- Script Linkado do seu documento de JavaScript -->
+        <script src="./assets/js/menu-mobile.js"></script>
         <script src="./assets/js/script.js"></script>
     </body>
 
